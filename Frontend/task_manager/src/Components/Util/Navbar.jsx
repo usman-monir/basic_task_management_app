@@ -7,12 +7,13 @@ const Navbar = ({user}) =>
     const logout = () =>{
         sessionStorage.clear();
         localStorage.clear();
-        navigate('/auth/login');
+        user = null;
+        navigate('/');
     }
     return(
-        <nav class="mx-3 p-2 navbar navbar-light bg-light justify-content-between">
-            <p class="navbar-brand">Task Manager App - {user?.username}</p>
-            <button class="btn btn-outline-danger my-2 my-sm-0" onClick={()=>logout()} >Logout</button>
+        <nav className="mx-3 p-2 navbar navbar-light bg-light justify-content-between">
+            <p className="navbar-brand">Task Manager App - {user?.username}</p>
+            <button className="btn btn-outline-danger my-2 my-sm-0" onClick={()=>logout()} >Logout</button>
         </nav>)
 }
 

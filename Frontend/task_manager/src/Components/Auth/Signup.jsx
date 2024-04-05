@@ -37,7 +37,7 @@ const SignupForm = () => {
         console.log(result);
         toast.success("Registering user...")
         setTimeout(() => {
-        navigate("/auth/login");
+        navigate("/login");
     }, 2000);
     })
     .catch(err => {
@@ -55,7 +55,7 @@ const SignupForm = () => {
           <h3 className="Auth-form-title">Sign Up</h3>
           <div className="text-center">
             Already registered?{" "}
-            <Link to="/auth/login">
+            <Link to="/login">
               Log In
             </Link>
           </div>

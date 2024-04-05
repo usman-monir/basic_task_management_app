@@ -50,7 +50,7 @@ const LoginForm = () => {
           <div className="Auth-form-content">
             <h3 className="Auth-form-title">Log In</h3>
             <div className="text-center">
-              Not registered yet? <Link to="/auth/signup">Sign Up</Link>
+              Not registered yet? <Link to="/">Sign Up</Link>
             </div>
             <div className="form-group mt-3">
               <label>Email address</label>
@@ -79,9 +79,9 @@ const LoginForm = () => {
                 Submit
               </button>
             </div>
-            <p className="forgot-password text-right mt-2">
+            {/* <p className="forgot-password text-right mt-2">
               <Link to="#">Forgot password?</Link>
-            </p>
+            </p> */}
           </div>
         </form>
       </div>
